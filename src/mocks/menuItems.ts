@@ -1,6 +1,12 @@
-import { Menu } from '@/features/order/types';
+type ResMenu = {
+  menu_id: number;
+  category_id: number;
+  menu_name: string;
+  menu_price: number;
+  menu_img_url: string;
+};
 
-export const mockMenuItems: Menu[] = [
+export const mockMenuItems: ResMenu[] = [
   // 메인 메뉴 (category_id: 0)
   {
     menu_id: 0,

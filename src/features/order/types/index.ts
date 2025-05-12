@@ -1,13 +1,6 @@
 // src/features/order/types/index.ts
 
-export interface Menu {
-  menu_id: number;
-  menu_name: string;
-  menu_price: number;
-  category_id: number; // Keep if needed for filtering or display
-  menu_img_url: string;
-  // Add other menu details if necessary (e.g., description)
-}
+import { Menu } from '@/types/menu';
 
 export interface CartItemType {
   menu: Menu; // Contains the full menu details
